@@ -7,10 +7,8 @@ requires-python = ">=3.9, <4.0"
 
 [tool.nonebot]
 adapters = [
-    { name = "OneBot V12", module_name = "nonebot.adapters.onebot.v12" },
-    { name = "Console", module_name = "nonebot.adapters.console" },
-    { name = "Minecraft", module_name = "nonebot.adapters.minecraft" }
+    { name = "Minecraft", module_name = "nonebot.adapters.minecraft" },
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
-plugins = ["nonebot_plugin_mccheck"]
+plugins = ["nonebot_plugin_apscheduler"]
 plugin_dirs = ["src/plugins"]
-builtin_plugins = ["echo", "single_session"]
