@@ -11,6 +11,6 @@ adapters = [
     { name = "Console", module_name = "nonebot.adapters.console" },
     { name = "Minecraft", module_name = "nonebot.adapters.minecraft" }
 ]
-plugins = []
+plugins = ["nonebot_plugin_mccheck"]
 plugin_dirs = ["src/plugins"]
 builtin_plugins = ["echo", "single_session"]
