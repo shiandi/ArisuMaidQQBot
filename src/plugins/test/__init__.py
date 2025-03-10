@@ -1,3 +1,4 @@
+from nonebot.permission import SUPERUSER
 from nonebot.plugin import PluginMetadata, get_plugin_config
 from nonebot.plugin.on import on_command
 
@@ -12,9 +13,11 @@ __plugin_meta__ = PluginMetadata(
 
 config = get_plugin_config(Config)
 
-echotest = on_command("复读")
+echotest = on_command("复读", permission=SUPERUSER)
 
 
 @echotest.handle()
 async def echo():
     await echotest.finish(f'你是复读机？')
+
+
